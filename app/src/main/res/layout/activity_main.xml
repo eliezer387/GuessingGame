@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    style="@style/material">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Adivina el numero"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingrese un numero entre 1 - 100"
+        android:id="@+id/textView2"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txtGuess"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="30dp"
+        android:layout_alignRight="@+id/btnGuess"
+        android:layout_alignLeft="@+id/btnGuess"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adivinar"
+        android:id="@+id/btnGuess"
+        android:layout_below="@+id/txtGuess"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Ingrese un numero y presione adivinar"
+        android:id="@+id/lblOutput"
+        android:layout_below="@+id/btnGuess"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        tools:ignore="HardcodedText" />
+</RelativeLayout>
