@@ -33,7 +33,8 @@
         android:layout_marginTop="30dp"
         android:layout_alignRight="@+id/btnGuess"
         android:layout_alignLeft="@+id/btnGuess"
-        android:gravity="center_vertical|center_horizontal" />
+        android:gravity="center_vertical|center_horizontal"
+        tools:ignore="LabelFor,RtlHardcoded" />
 
     <Button
         android:layout_width="wrap_content"
